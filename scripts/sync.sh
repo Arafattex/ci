@@ -25,8 +25,8 @@ make -j"$PROCS" O=outL \
                 CC=clang \
                 CROSS_COMPILE=aarch64-linux-gnu- \
                 CROSS_COMPILE_ARM32=arm-linux-gnueabi- \
-                LD=ld.lld \
-                NM=llvm-nm \
-                OBJCOPY=llvm-objcopy
+                LD=~/kernel/clang/bin/ld.lld \
+                NM=~/kernel/clang/bin/llvm-nm \
+                OBJCOPY=~/kernel/clang/bin/llvm-objcopy
 # Exit
 exit 0
