@@ -24,7 +24,7 @@ task:
       - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/los/scripts/checks.sh | bash
 
   Sync_script:
-      - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/los/scripts/sync.sh | bash
+      - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/Kernel/scripts/sync.sh | bash
 
   Build_script:
       - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/los/scripts/build.sh | bash
