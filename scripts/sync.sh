@@ -13,7 +13,7 @@ telegram_message() {
 cd ~
 git clone https://github.com/Arafattex/shas-dream-oc-mt6768-a11.git --depth 1 -b shas-noc kernel
 cd kernel
-git clone https://github.com/rama982/clang --depth=1 clang
+git clone https://github.com/kdrag0n/proton-clang --depth=1 clang
 mkdir outL
 export ARCH=arm64
 export SUBARCH=arm64
