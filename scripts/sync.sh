@@ -21,11 +21,12 @@ export DTC_EXT=dtc
 make O=outL ARCH=arm64 lancelot_defconfig
 export PATH="~/kernel/clang/bin:${PATH}"
 make -j"$PROCS" O=outL \
-                  ARCH=arm64 \
-                  CC=clang \
-                  CROSS_COMPILE=aarch64-linux-gnu- \
-                  CROSS_COMPILE_ARM32=arm-linux-gnueabi- \
-                  NM=llvm-nm \
-                  OBJCOPY=llvm-objcopy
+                ARCH=arm64 \
+                CC=clang \
+                CROSS_COMPILE=aarch64-linux-gnu- \
+                CROSS_COMPILE_ARM32=arm-linux-gnueabi- \
+                LD=ld.lld \
+                NM=llvm-nm \
+                OBJCOPY=llvm-objcopy
 # Exit
 exit 0
