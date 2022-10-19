@@ -1,12 +1,6 @@
 #!/bin/bash
 
-# Source Vars
-source $CONFIG
 
-# Change to the Home Directory
-cd ~
-curl --create-dirs -L -o /usr/local/bin/repo -O -L https://storage.googleapis.com/git-repo-downloads/repo
-chmod a+rx /usr/local/bin/repo
 
 # A Function to Send Posts to Telegram
 telegram_message() {
@@ -16,9 +10,6 @@ telegram_message() {
 	-d text="$1"
 }
 
-# Clone the Sync Repo
-
-# Initialize local repository
 cd ~
 git clone https://github.com/Arafattex/shas-dream-oc-mt6768-a11.git --depth 1 -b shas-noc kernel
 cd kernel
